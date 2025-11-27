@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appfilm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.example.appfilm.FilmApp"
+        android:allowBackup="true"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:label="Film App"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <activity
+            android:name="com.example.appfilm.Activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.appfilm.Activities.FilmDetailsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.appfilm.Activities.PaymentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.appfilm.Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appfilm.Activities.PaymentSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appfilm.Activities.FavoritesActivity"
+            android:exported="false" />
+
+    </application>
+</manifest>
