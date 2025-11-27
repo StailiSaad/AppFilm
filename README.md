@@ -148,8 +148,6 @@ dependencies {
 
 ### 🧑‍💻  Développeurs Principaux
 **Saad Staili** et **Rim Laasri**
-- Contact : saadstaili1903@gmail.com
-- GitHub : [StailiSaad](https://github.com/StailiSaad)
 
  
 
