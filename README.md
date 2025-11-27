@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🎬 Application Film - Application de Streaming de Films
 
 Une application Android moderne de streaming de films développée en Kotlin qui permet aux utilisateurs de parcourir des films, gérer leurs favoris et souscrire à des abonnements VIP premium.
@@ -7,114 +6,109 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 ![Picasso](https://img.shields.io/badge/Picasso-FF6D00?style=for-the-badge)
 
-## 📱 Fonctionnalités
+## 📋 Table des Matières
+- [Fonctionnalités](#-fonctionnalités)
+- [Captures d'Écran](#-captures-décran)
+- [Architecture](#-architecture)
+- [Stack Technique](#-stack-technique)
+- [Installation](#-installation)
+- [Structure du Projet](#-structure-du-projet)
 
-### 🎯 Fonctionnalités Principales
-- **Navigation des Films** : Parcourir les films across multiples catégories (Tendances, Populaires, Nouvelles Sorties, Action, Comédie)
-- **Détails des Films** : Vue détaillée avec descriptions, notations et métadonnées
-- **Gestion des Favoris** : Ajouter/supprimer des films aux favoris personnels avec glisser-supprimer
-- **Authentification Utilisateur** : Système de connexion simple
-- **Abonnement VIP** : Abonnement premium à trois niveaux avec flux de paiement sécurisé
+## 🎯 Fonctionnalités
+
+### ✨ Fonctionnalités Principales
+- **🎬 Navigation des Films** - Parcourir les films across multiples catégories (Tendances, Populaires, Nouvelles Sorties, Action, Comédie)
+- **📖 Détails des Films** - Vue détaillée avec descriptions, notations et métadonnées
+- **⭐ Gestion des Favoris** - Ajouter/supprimer des films aux favoris personnels avec glisser-supprimer
+- **🔐 Authentification Utilisateur** - Système de connexion simple
+- **💎 Abonnement VIP** - Abonnement premium à trois niveaux avec flux de paiement sécurisé
 
 ### 🎨 Expérience Utilisateur
-- **Thème Sombre** : Belle interface sombre avec accents dorés
-- **Défilement Horizontal** : Navigation fluide par catégories
-- **Chargement d'Images** : Chargement rapide d'images avec Picasso
-- **Design Responsive** : Optimisé pour différentes tailles d'écran
-- **Gestes de Glissement** : Glisser-supprimer intuitif dans les favoris
+- **🌙 Thème Sombre** - Belle interface sombre avec accents dorés
+- **↔️ Défilement Horizontal** - Navigation fluide par catégories
+- **🖼️ Chargement d'Images** - Chargement rapide d'images avec Picasso
+- **📱 Design Responsive** - Optimisé pour différentes tailles d'écran
+- **💫 Gestes de Glissement** - Glisser-supprimer intuitif dans les favoris
 
 ### 💳 Système de Paiement
-- **Niveaux VIP** :
-    - Niveau 1 : 9,99€/mois - Fonctionnalités de base
-    - Niveau 2 : 19,99€/mois - Fonctionnalités premium
-    - Niveau 3 : 29,99€/mois - Fonctionnalités ultimes
-- **Méthodes de Paiement** : Support Visa, MasterCard, PayPal
-- **Validation Sécurisée** : Validation complète des entrées
+- **🏆 Niveaux VIP** :
+    - **Niveau 1** : 9,99€/mois - Fonctionnalités de base
+    - **Niveau 2** : 19,99€/mois - Fonctionnalités premium
+    - **Niveau 3** : 29,99€/mois - Fonctionnalités ultimes
+- **💳 Méthodes de Paiement** - Support Visa, MasterCard, PayPal
+- **🔒 Validation Sécurisée** - Validation complète des entrées
 
 ## 🏗️ Architecture
+<img app/src/screenshots/architecture.PNG" width="250">
+## 📸 Captures d'Écran
 
-📱 Structure de l'Application
-├── 🏠 MainActivity - Écran d'accueil avec catégories de films
-├── 🎞️ FilmDetailsActivity - Vue détaillée des films
-├── ⭐ FavoritesActivity - Gestion des favoris
-├── 🔐 LoginActivity - Authentification utilisateur
-├── 💳 PaymentActivity - Abonnement VIP
-├── ✅ PaymentSuccessActivity - Confirmation de paiement
-└── 🛠️ Classes de Support
-├── Film - Modèle de données
-├── FilmAdapter - Adaptateur de liste
-├── FavoritesManager - Wrapper SharedPreferences
-└── FavoritesAdapter - Adaptateur RecyclerView
+### 📱 Interface Utilisateur
 
-## 📸 Documentation Technique - Screenshot Dokka
+<div align="center">
+
+| Écran d'Accueil | Détails du Film | Liste des Favoris |
+|:---------------:|:---------------:|:-----------------:|
+| <img src="app/src/screenshots/Homepage.jpg" width="250"> | <img src="app/src/screenshots/filmdetails.jpg" width="250"> | <img src="app/src/screenshots/favlist.jpg" width="250"> |
+| *Interface principale avec navigation par catégories* | *Détails complets du film avec notation* | *Gestion des films favoris avec swipe* |
+
+| Processus de Paiement | Confirmation | Authentification |
+|:---------------------:|:------------:|:----------------:|
+| <img src="app/src/screenshots/paiementpage.jpg" width="250"> | <img src="app/src/screenshots/paiementpage5.jpg" width="250"> | <img src="app/src/screenshots/loginpage.jpg" width="250"> |
+| *Sélection d'abonnement VIP* | *Paiement réussi* | *Connexion utilisateur* |
+
+</div>
+
+### 🔍 Vues Supplémentaires
+
+<div align="center">
+
+| Détails Film (2) | Favoris (2) | Favoris (3) |
+|:----------------:|:-----------:|:-----------:|
+| <img src="app/src/screenshots/filmdetails2.jpg" width="200"> | <img src="app/src/screenshots/favlist2.jpg" width="200"> | <img src="app/src/screenshots/favlist3.jpg" width="200"> |
+| *Ajout aux favoris* | *Interface des favoris* | *Gestion avancée* |
+
+| Paiement (2) | Paiement (3) | Paiement (4) |
+|:------------:|:------------:|:------------:|
+| <img src="app/src/screenshots/paiementpage2.jpg" width="200"> | <img src="app/src/screenshots/paiementpage3.jpg" width="200"> | <img src="app/src/screenshots/paiementpage4.jpg" width="200"> |
+| *Options de paiement* | *Validation* | *Finalisation* |
+
+</div>
+
+### 📚 Documentation Technique
+
+<div align="center">
+
 ![Documentation Dokka](app/src/screenshots/dokka.PNG)
-Cette capture montre la documentation technique générée par Dokka, incluant toutes les classes, fonctions et commentaires KDoc du projet.
+*Documentation technique générée par Dokka - Structure complète du code avec commentaires KDoc*
 
-## 📸 Captures d'Écran de l'Application
-
-### Écran Principal
-![Ecran Principal](app/src/screenshots/Homepage.jpg) 
-Interface d'accueil montrant les différentes catégories de films avec défilement horizontal.
-
-### Détails des Films
-![Détails des Films](app/src/screenshots/filmdetails.jpg)
-![Détails des Films](app/src/screenshots/filmdetails2.jpg)
-Vue détaillée d'un film avec affiche, synopsis, notation et boutons d'action et l'ajout au liste des Favoris.
-
-### Gestion des Favoris
-![Liste des Favoris](app/src/screenshots/favlist.jpg)
-![Liste des Favoris](app/src/screenshots/favlist2.jpg)
-![Liste des Favoris](app/src/screenshots/favlist3.jpg)
-Liste des films favoris avec fonctionnalité glisser-supprimer.
-
-### Page de Paiement
-![Page de paiement](app/src/screenshots/paiementpage.jpg)
-![Page de paiement](app/src/screenshots/paiementpage2.jpg)
-![Page de paiement](app/src/screenshots/paiementpage3.jpg)
-![Page de paiement](app/src/screenshots/paiementpage4.jpg)
-Interface de sélection d'abonnement VIP et de paiement.
-
-### Confirmation de Paiement
-![Page de paiement](app/src/screenshots/paiementpage5.jpg)
-Page de confirmation après un paiement réussi.
-
-### Connexion Utilisateur
-![Page de paiement](app/src/screenshots/loginpage.jpg)
-Formulaire d'authentification utilisateur.
-
-
+</div>
 
 ## 🛠️ Stack Technique
 
-- **Langage** : Kotlin
-- **SDK Minimum** : 24 (Android 7.0)
-- **SDK Cible** : 36
-- **Architecture** : Pattern MVC
-- **Chargement d'Images** : Picasso
-- **Layout** : ConstraintLayout + LinearLayout
-- **Listes** : RecyclerView avec adaptateurs personnalisés
-- **Stockage** : SharedPreferences pour les favoris
-- **Réseau** : Permission Internet pour le chargement d'images
+### 🔧 Technologies Utilisées
+- **📝 Langage** : Kotlin
+- **📱 SDK Minimum** : 24 (Android 7.0)
+- **🎯 SDK Cible** : 36
+- **🏗️ Architecture** : Pattern MVC
+- **🖼️ Chargement d'Images** : Picasso
+- **📐 Layout** : ConstraintLayout + LinearLayout
+- **📋 Listes** : RecyclerView avec adaptateurs personnalisés
+- **💾 Stockage** : SharedPreferences pour les favoris
+- **🌐 Réseau** : Permission Internet pour le chargement d'images
 
-## 📦 Dépendances
+### 📦 Dépendances
 
-**dependencies :**
-implementation("com.google.code.gson:gson:2.10.1")
-implementation("com.squareup.picasso:picasso:2.71828")
-implementation(libs.androidx.core.ktx)
-implementation(libs.androidx.appcompat)
-implementation(libs.material)
-implementation(libs.androidx.activity)
-implementation(libs.androidx.constraintlayout)
-implementation("androidx.recyclerview:recyclerview:1.3.2")
-testImplementation(libs.junit)
-androidTestImplementation(libs.androidx.junit)
-androidTestImplementation(libs.androidx.espresso.core)
-
-
-## 🔧 Installation
-
-1. **Cloner le dépôt**
-   ```bash
-   git clone https://github.com/StailiSaad/AppFilm
- 
+```kotlin
+dependencies {
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+}
