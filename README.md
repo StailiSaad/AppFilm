@@ -8,8 +8,8 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 
 ## 📋 Table des Matières
 - [Fonctionnalités](#-fonctionnalités)
-- [Captures d'Écran](#-captures-décran)
 - [Architecture](#-architecture)
+- [Captures d'Écran](#-captures-décran)
 - [Stack Technique](#-stack-technique)
 - [Installation](#-installation)
 - [Structure du Projet](#-structure-du-projet)
@@ -39,7 +39,14 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 - **🔒 Validation Sécurisée** - Validation complète des entrées
 
 ## 🏗️ Architecture
-<img app/src/screenshots/architecture.PNG" width="250">
+
+<div align="center">
+
+![Architecture de l'Application](app/src/screenshots/architecture.PNG)
+*Diagramme d'architecture montrant la structure complète de l'application*
+
+</div>
+
 ## 📸 Captures d'Écran
 
 ### 📱 Interface Utilisateur
@@ -112,3 +119,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+## 🔧 Installation
+
+1. **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/StailiSaad/AppFilm
+ 
