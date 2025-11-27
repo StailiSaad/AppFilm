@@ -53,10 +53,10 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 
 <div align="center">
 
-| Écran d'Accueil | Détails du Film | Liste des Favoris |
-|:---------------:|:---------------:|:-----------------:|
+| Écran d'Accueil | Détails du Film |                    Liste des Favoris                    |
+|:---------------:|:---------------:|:-------------------------------------------------------:|
 | <img src="app/src/screenshots/Homepage.jpg" width="250"> | <img src="app/src/screenshots/filmdetails.jpg" width="250"> | <img src="app/src/screenshots/favlist.jpg" width="250"> |
-| *Interface principale avec navigation par catégories* | *Détails complets du film avec notation* | *Gestion des films favoris avec swipe* |
+| *Interface principale avec navigation par catégories* | *Détails complets du film avec notation* |              *Interface des Films Favoris*              |
 
 | Processus de Paiement | Confirmation | Authentification |
 |:---------------------:|:------------:|:----------------:|
@@ -72,12 +72,12 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 | Détails Film (2) | Favoris (2) | Favoris (3) |
 |:----------------:|:-----------:|:-----------:|
 | <img src="app/src/screenshots/filmdetails2.jpg" width="200"> | <img src="app/src/screenshots/favlist2.jpg" width="200"> | <img src="app/src/screenshots/favlist3.jpg" width="200"> |
-| *Ajout aux favoris* | *Interface des favoris* | *Gestion avancée* |
+| *Ajout aux favoris* | *Gestion des films favoris avec swipe* | *Gestion avancée* |
 
-| Paiement (2) | Paiement (3) | Paiement (4) |
-|:------------:|:------------:|:------------:|
+|                         Paiement VISA                         |                      Paiement MASTERCARD                      |                        Paiement PAYPAL                        |
+|:-------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:|
 | <img src="app/src/screenshots/paiementpage2.jpg" width="200"> | <img src="app/src/screenshots/paiementpage3.jpg" width="200"> | <img src="app/src/screenshots/paiementpage4.jpg" width="200"> |
-| *Options de paiement* | *Validation* | *Finalisation* |
+|                     *Champs a remplir*                     |                      *Champs a remplir*                       |                        *Finalisation*                         |
 
 </div>
 
