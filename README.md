@@ -8,21 +8,22 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 
 ## 📋 Table des Matières
 - [Fonctionnalités](#-fonctionnalités)
-    - [Fonctionnalités Principales](#-fonctionnalités-principales)
-    - [Expérience Utilisateur](#-expérience-utilisateur)
-    - [Système de Paiement](#-système-de-paiement)
+  - [Fonctionnalités Principales](#-fonctionnalités-principales)
+  - [Expérience Utilisateur](#-expérience-utilisateur)
+  - [Système de Paiement](#-système-de-paiement)
 - [Architecture](#-architecture)
-- [Captures dÉcran](#-captures-décran)
-    - [Interface Utilisateur](#-interface-utilisateur)
-    - [Vues Supplémentaires](#-vues-supplémentaires)
-    - [Documentation Technique](#-documentation-technique)
+- [Captures d'Écran](#-captures-décran)
+  - [Interface Utilisateur](#-interface-utilisateur)
+  - [Vues Supplémentaires](#-vues-supplémentaires)
+  - [Documentation Technique](#-documentation-technique)
 - [Stack Technique](#-stack-technique)
-    - [Technologies Utilisées](#-technologies-utilisées)
-    - [Dépendances](#-dépendances)
+  - [Technologies Utilisées](#-technologies-utilisées)
+  - [Dépendances](#-dépendances)
 - [Installation](#-installation)
 - [Équipe de Développement](#-équipe-de-développement)
 - [Contacts](#-contacts)
 - [Remerciements](#-remerciements)
+
 
 
 ## 🎯 Fonctionnalités
@@ -50,6 +51,7 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 - **🔒 Validation Sécurisée** - Validation complète des entrées
 
 ## 🏗️ Architecture
+
 
 <div align="center">
 
