@@ -168,7 +168,6 @@ dependencies {
 - Les contributeurs open-source pour les librairies utilisées
 
 ---
-
-*"L'innovation distingue un leader d'un suiveur." - Steve Jobs*
+ 
 
 **Dernière mise à jour : 27/11/2025**
