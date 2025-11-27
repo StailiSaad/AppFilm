@@ -43,7 +43,7 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 <div align="center">
 
 ![Architecture de l'Application](app/src/screenshots/architecture.PNG)
-*Diagramme d'architecture montrant la structure complète de l'application*
+
 
 </div>
 
@@ -133,8 +133,8 @@ dependencies {
 **Équipe AppFilm**  
 *Développement d'Applications Mobiles Innovantes*
 
-### 🧑‍💻 Développeur Principal
-**Saad Staili**et**Rim Laasri**
+### 🧑‍💻  Développeurs Principaux
+**Saad Staili** et **Rim Laasri**
 - Contact : saadstaili1903@gmail.com
 - GitHub : [StailiSaad](https://github.com/StailiSaad)
 
