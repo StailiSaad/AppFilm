@@ -125,4 +125,39 @@ dependencies {
 1. **Cloner le dépôt**
    ```bash
    git clone https://github.com/StailiSaad/AppFilm
+
+# 📄 Copyright & Informations de l'Équipe
+
+## 👥 Équipe de Développement
+
+**Équipe AppFilm**  
+*Développement d'Applications Mobiles Innovantes*
+
+### 🧑‍💻 Développeur Principal
+**Saad Staili**et**Rim Laasri**
+- Contact : saadstaili1903@gmail.com
+- GitHub : [StailiSaad](https://github.com/StailiSaad)
+
+### 🏢 Organisation
+**AppFilm Development Team**  
+Spécialisée dans le développement d'applications mobiles.
+
  
+## 🔗 Contacts
+
+**Pour toute question ou collaboration:**
+- 📧 Email : saadstaili1903@gmail.com
+- 🐙 GitHub : github.com/AppFilm-Team
+
+## 🙏 Remerciements
+
+**Remerciements spéciaux à:**
+- L'équipe pédagogique pour le support et les conseils
+- La communauté Android pour les ressources partagées
+- Les contributeurs open-source pour les librairies utilisées
+
+---
+
+*"L'innovation distingue un leader d'un suiveur." - Steve Jobs*
+
+**Dernière mise à jour : 27/11/2025**
