@@ -7,12 +7,23 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 ![Picasso](https://img.shields.io/badge/Picasso-FF6D00?style=for-the-badge)
 
 ## 📋 Table des Matières
-- [Fonctionnalités](#fonctionnalités)
-- [Architecture](#architecture)
-- [Captures d'Écran](#captures-décran)
-- [Stack Technique](#stack-technique)
-- [Installation](#installation)
-- [Équipe](#équipe-de-développement)
+- [Fonctionnalités](#-fonctionnalités)
+    - [Fonctionnalités Principales](#-fonctionnalités-principales)
+    - [Expérience Utilisateur](#-expérience-utilisateur)
+    - [Système de Paiement](#-système-de-paiement)
+- [Architecture](#-architecture)
+- [Captures dÉcran](#-captures-décran)
+    - [Interface Utilisateur](#-interface-utilisateur)
+    - [Vues Supplémentaires](#-vues-supplémentaires)
+    - [Documentation Technique](#-documentation-technique)
+- [Stack Technique](#-stack-technique)
+    - [Technologies Utilisées](#-technologies-utilisées)
+    - [Dépendances](#-dépendances)
+- [Installation](#-installation)
+- [Équipe de Développement](#-équipe-de-développement)
+- [Contacts](#-contacts)
+- [Remerciements](#-remerciements)
+
 
 ## 🎯 Fonctionnalités
 
