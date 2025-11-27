@@ -117,6 +117,4 @@ androidTestImplementation(libs.androidx.espresso.core)
 1. **Cloner le dépôt**
    ```bash
    git clone https://github.com/StailiSaad/AppFilm
-=======
-
->>>>>>> 1ef1b74a14b09be20dd71bfc5f0adae6f5d74fa2
+ 
