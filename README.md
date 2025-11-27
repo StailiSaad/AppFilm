@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎬 Application Film - Application de Streaming de Films
 
 Une application Android moderne de streaming de films développée en Kotlin qui permet aux utilisateurs de parcourir des films, gérer leurs favoris et souscrire à des abonnements VIP premium.
@@ -116,3 +117,6 @@ androidTestImplementation(libs.androidx.espresso.core)
 1. **Cloner le dépôt**
    ```bash
    git clone https://github.com/StailiSaad/AppFilm
+=======
+
+>>>>>>> 1ef1b74a14b09be20dd71bfc5f0adae6f5d74fa2
