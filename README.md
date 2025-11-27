@@ -10,8 +10,7 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 - [Fonctionnalités](#-fonctionnalités)
 - [Architecture](#-architecture)
 - [Captures d'Écran](#-captures-décran) 
-- [Installation](#-installation)
-- [Structure du Projet](#-architecture)
+- [Installation](#-installation) 
 
 ## 🎯 Fonctionnalités
 
