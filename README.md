@@ -98,7 +98,7 @@ Formulaire d'authentification utilisateur.
 
 ## 📦 Dépendances
 
-dependencies {
+**dependencies :**
 implementation("com.google.code.gson:gson:2.10.1")
 implementation("com.squareup.picasso:picasso:2.71828")
 implementation(libs.androidx.core.ktx)
@@ -110,7 +110,7 @@ implementation("androidx.recyclerview:recyclerview:1.3.2")
 testImplementation(libs.junit)
 androidTestImplementation(libs.androidx.junit)
 androidTestImplementation(libs.androidx.espresso.core)
-}
+
 
 ## 🔧 Installation
 
