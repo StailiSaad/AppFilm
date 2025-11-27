@@ -138,16 +138,14 @@ dependencies {
 - Contact : saadstaili1903@gmail.com
 - GitHub : [StailiSaad](https://github.com/StailiSaad)
 
-### 🏢 Organisation
-**AppFilm Development Team**  
-Spécialisée dans le développement d'applications mobiles.
+ 
 
  
 ## 🔗 Contacts
 
 **Pour toute question ou collaboration:**
 - 📧 Email : saadstaili1903@gmail.com
-- 🐙 GitHub : github.com/AppFilm-Team
+- 🐙 GitHub :[StailiSaad](https://github.com/StailiSaad)
 
 ## 🙏 Remerciements
 
