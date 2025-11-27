@@ -119,6 +119,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+```
 ## 🔧 Installation
 
 1. **Cloner le dépôt**
