@@ -144,7 +144,7 @@ dependencies {
 ## 👥 Équipe de Développement
 
 **Équipe AppFilm**  
-*Développement d'Applications Mobiles Innovantes*
+*Développement d'Applications Mobiles *
 
 ### 🧑‍💻  Développeurs Principaux
 **Saad Staili** et **Rim Laasri**
