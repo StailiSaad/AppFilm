@@ -69,10 +69,10 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 
 <div align="center">
 
-| Détails Film (2) | Favoris (2) | Favoris (3) |
-|:----------------:|:-----------:|:-----------:|
+|              Détails Film et ajout aux Favoris               |               Favoris + Swipe(Suppression)               |           Favoris apres Suprresion des Films             |
+|:------------------------------------------------------------:|:--------------------------------------------------------:|:--------------------------------------------------------:|
 | <img src="app/src/screenshots/filmdetails2.jpg" width="200"> | <img src="app/src/screenshots/favlist2.jpg" width="200"> | <img src="app/src/screenshots/favlist3.jpg" width="200"> |
-| *Ajout aux favoris* | *Gestion des films favoris avec swipe* | *Gestion avancée* |
+|                     *Ajout aux favoris*                      |          *Gestion des films favoris avec swipe*          |                    *Gestion avancée*                     |
 
 |                         Paiement VISA                         |                      Paiement MASTERCARD                      |                        Paiement PAYPAL                        |
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:|
