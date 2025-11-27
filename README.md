@@ -46,39 +46,39 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 └── FavoritesAdapter - Adaptateur RecyclerView
 
 ## 📸 Documentation Technique - Screenshot Dokka
-![Documentation Dokka](src/screenshots/dokka.PNG)
+![Documentation Dokka](app/src/screenshots/dokka.PNG)
 Cette capture montre la documentation technique générée par Dokka, incluant toutes les classes, fonctions et commentaires KDoc du projet.
 
 ## 📸 Captures d'Écran de l'Application
 
 ### Écran Principal
-![Ecran Principal](src/screenshots/Homepage.jpg) 
+![Ecran Principal](app/src/screenshots/Homepage.jpg) 
 Interface d'accueil montrant les différentes catégories de films avec défilement horizontal.
 
 ### Détails des Films
-![Détails des Films](src/screenshots/filmdetails.jpg)
-![Détails des Films](src/screenshots/filmdetails2.jpg)
+![Détails des Films](app/src/screenshots/filmdetails.jpg)
+![Détails des Films](app/src/screenshots/filmdetails2.jpg)
 Vue détaillée d'un film avec affiche, synopsis, notation et boutons d'action et l'ajout au liste des Favoris.
 
 ### Gestion des Favoris
-![Liste des Favoris](src/screenshots/favlist.jpg)
-![Liste des Favoris](src/screenshots/favlist2.jpg)
-![Liste des Favoris](src/screenshots/favlist3.jpg)
+![Liste des Favoris](app/src/screenshots/favlist.jpg)
+![Liste des Favoris](app/src/screenshots/favlist2.jpg)
+![Liste des Favoris](app/src/screenshots/favlist3.jpg)
 Liste des films favoris avec fonctionnalité glisser-supprimer.
 
 ### Page de Paiement
-![Page de paiement](src/screenshots/paiementpage.jpg)
-![Page de paiement](src/screenshots/paiementpage2.jpg)
-![Page de paiement](src/screenshots/paiementpage3.jpg)
-![Page de paiement](src/screenshots/paiementpage4.jpg)
+![Page de paiement](app/src/screenshots/paiementpage.jpg)
+![Page de paiement](app/src/screenshots/paiementpage2.jpg)
+![Page de paiement](app/src/screenshots/paiementpage3.jpg)
+![Page de paiement](app/src/screenshots/paiementpage4.jpg)
 Interface de sélection d'abonnement VIP et de paiement.
 
 ### Confirmation de Paiement
-![Page de paiement](src/screenshots/paiementpage5.jpg)
+![Page de paiement](app/src/screenshots/paiementpage5.jpg)
 Page de confirmation après un paiement réussi.
 
 ### Connexion Utilisateur
-![Page de paiement](src/screenshots/loginpage.jpg)
+![Page de paiement](app/src/screenshots/loginpage.jpg)
 Formulaire d'authentification utilisateur.
 
 
