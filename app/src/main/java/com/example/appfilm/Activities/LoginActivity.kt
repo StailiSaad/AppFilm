@@ -17,8 +17,20 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+/**
+ * LoginActivity
+ *
+ * Activity responsible for user authentication.
+ * The user logs in using an email and password.
+ *
+ * The UI is fully implemented using Jetpack Compose
+ * without any XML layout files.
+ */
 class LoginActivity : ComponentActivity() {
 
+    /**
+     * Initializes the activity and sets the Compose UI content.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -33,12 +45,22 @@ class LoginActivity : ComponentActivity() {
     }
 }
 
+/**
+ * Composable that displays the login screen.
+ *
+ * @param onLoginSuccess Callback invoked when the user
+ * successfully enters valid login credentials.
+ */
 @Composable
 fun LoginScreen(onLoginSuccess: () -> Unit) {
 
+    /** Email entered by the user */
     var email by remember { mutableStateOf("") }
+
+    /** Password entered by the user */
     var password by remember { mutableStateOf("") }
 
+    /** Context used for showing Toast messages */
     val context = androidx.compose.ui.platform.LocalContext.current
 
     Column(
