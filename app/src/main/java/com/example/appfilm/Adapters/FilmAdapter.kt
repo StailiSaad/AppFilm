@@ -1,62 +1,76 @@
 package com.example.appfilm.Adapters
 
-import android.app.Activity
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.appfilm.Activities.FilmDetailsActivity
+import androidx.recyclerview.widget.RecyclerView
 import com.example.appfilm.Models.Film
 import com.example.appfilm.R
-import com.squareup.picasso.Picasso
 
 /**
- * ArrayAdapter for displaying films in a ListView with click handling
+ * RecyclerView Adapter for displaying films.
+ * Supports filtering and item animations.
  */
 class FilmAdapter(
-    private val context: Activity,
-    private val films: List<Film>
-) : ArrayAdapter<Film>(context, R.layout.item_film, films) {
+    private var filmList: MutableList<Film>,
+    private val onItemClick: (Film) -> Unit
+) : RecyclerView.Adapter<FilmAdapter.FilmViewHolder>() {
+
+    private var fullList: List<Film> = ArrayList(filmList)
 
     /**
-     * Creates and returns the view for each film item in the list
+     * ViewHolder for film item.
      */
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.item_film, parent, false)
+    inner class FilmViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val titleText: TextView = itemView.findViewById(R.id.filmTitle)
+        private val imageView: ImageView = itemView.findViewById(R.id.filmImage)
 
-        val film = films[position]
+        fun bind(film: Film) {
+            titleText.text = film.title
+            imageView.setImageResource(film.imageResId)
 
-        val img = view.findViewById<ImageView>(R.id.filmImage)
-        val title = view.findViewById<TextView>(R.id.filmTitle)
-        val type = view.findViewById<TextView>(R.id.filmType)
-        val rating = view.findViewById<TextView>(R.id.filmRating)
-
-        Picasso.get().load(film.imageUrl)
-            .placeholder(android.R.drawable.ic_menu_gallery)
-            .error(android.R.drawable.ic_dialog_alert)
-            .fit().centerCrop()
-            .into(img)
-
-        title.text = film.title
-        type.text = film.type
-        rating.text = "⭐ ${film.rating}"
-
-        // Open details when clicking a film
-        view.setOnClickListener {
-            val i = Intent(context, FilmDetailsActivity::class.java)
-            i.putExtra("film_id", film.id)
-            i.putExtra("film_title", film.title)
-            i.putExtra("film_type", film.type)
-            i.putExtra("film_description", film.description)
-            i.putExtra("film_rating", film.rating)
-            i.putExtra("film_duration", film.duration)
-            i.putExtra("film_image", film.imageUrl)
-            context.startActivity(i)
+            itemView.setOnClickListener {
+                onItemClick(film)
+            }
         }
+    }
 
-        return view
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_film, parent, false)
+        return FilmViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: FilmViewHolder, position: Int) {
+
+        // Animation
+        holder.itemView.alpha = 0f
+        holder.itemView.animate()
+            .alpha(1f)
+            .setDuration(400)
+            .start()
+
+        holder.bind(filmList[position])
+    }
+
+    override fun getItemCount(): Int = filmList.size
+
+    /**
+     * Filters films by title.
+     */
+    fun filter(query: String) {
+        filmList.clear()
+        if (query.isEmpty()) {
+            filmList.addAll(fullList)
+        } else {
+            filmList.addAll(
+                fullList.filter {
+                    it.title.contains(query, ignoreCase = true)
+                }
+            )
+        }
+        notifyDataSetChanged()
     }
 }
