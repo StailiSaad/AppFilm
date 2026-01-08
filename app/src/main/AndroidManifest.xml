@@ -6,38 +6,51 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.example.appfilm.FilmApp"
+        android:name=".FilmApp"
         android:allowBackup="true"
-        android:icon="@android:drawable/ic_menu_gallery"
+        android:icon="@mipmap/ic_launcher"
         android:label="Film App"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:theme="@style/Theme.AppFilm">
 
+         
         <activity
-            android:name="com.example.appfilm.Activities.MainActivity"
+            android:name=".Activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+ 
         <activity
-            android:name="com.example.appfilm.Activities.FilmDetailsActivity"
+            android:name=".Activities.LoginActivity"
             android:exported="false" />
 
+         
         <activity
-            android:name="com.example.appfilm.Activities.PaymentActivity"
+            android:name=".Activities.MainActivity"
             android:exported="false" />
 
+       
         <activity
-            android:name="com.example.appfilm.Activities.LoginActivity"
+            android:name=".Activities.FilmDetailsActivity"
             android:exported="false" />
+
+      
         <activity
-            android:name="com.example.appfilm.Activities.PaymentSuccessActivity"
+            android:name=".Activities.FavoritesActivity"
             android:exported="false" />
+
+         
         <activity
-            android:name="com.example.appfilm.Activities.FavoritesActivity"
+            android:name=".Activities.PaymentActivity"
+            android:exported="false" />
+
+       
+        <activity
+            android:name=".Activities.PaymentSuccessActivity"
             android:exported="false" />
 
     </application>
+
 </manifest>
