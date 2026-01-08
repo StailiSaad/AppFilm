@@ -1,14 +1,17 @@
-package com.example.tp10part2.Activities
+package com.example.appfilm.Activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -16,13 +19,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.foundation.Image
-import com.example.tp10part2.R
-import kotlinx.coroutines.delay
+import com.example.appfilm.R
 
 /**
- * Splash screen activity displayed at app launch.
- * Shows the app logo and name, then navigates to LoginActivity.
+ * Splash screen displayed at app launch.
+ * Shows the app logo and name before navigating to LoginActivity.
  */
 class SplashActivity : ComponentActivity() {
 
@@ -30,49 +31,41 @@ class SplashActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            SplashScreen {
-                startActivity(Intent(this, LoginActivity::class.java))
-                finish()
-            }
+            SplashScreen()
         }
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }, 2000)
     }
 }
 
 /**
- * Composable Splash Screen UI.
- *
- * @param onTimeout Called after splash delay ends
+ * Composable UI for the splash screen.
  */
 @Composable
-fun SplashScreen(onTimeout: () -> Unit) {
-
-    LaunchedEffect(Unit) {
-        delay(2000) // 2 seconds splash duration
-        onTimeout()
-    }
-
+fun SplashScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
             .background(Color.Black),
         contentAlignment = Alignment.Center
     ) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
 
             Image(
-                painter = painterResource(id = R.drawable.ic_play),
+                painter = painterResource(id = R.drawable.ic_launcher_foreground),
                 contentDescription = "App Logo",
-                modifier = Modifier.size(90.dp)
+                modifier = Modifier.size(120.dp)
             )
 
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
             Text(
                 text = "Film App",
                 color = Color.White,
-                fontSize = 20.sp,
+                fontSize = 26.sp,
                 fontWeight = FontWeight.Bold
             )
         }
