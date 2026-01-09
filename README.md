@@ -123,21 +123,32 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 - **💾 Stockage** : SharedPreferences pour les favoris
 - **🌐 Réseau** : Permission Internet pour le chargement d'images
 
-### 📦 Dépendances
+### 📦 Dépendances principales
 
 ```kotlin
 dependencies {
-    implementation("com.google.code.gson:gson:2.10.1")
-    implementation("com.squareup.picasso:picasso:2.71828")
-    implementation("androidx.recyclerview:recyclerview:1.3.2")
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    
+
+// UI & Navigation
+  implementation("androidx.core:core-ktx:1.12.0")
+  implementation("androidx.appcompat:appcompat:1.6.1")
+  implementation("com.google.android.material:material:1.11.0")
+  implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+  implementation("androidx.recyclerview:recyclerview:1.3.2")
+  implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
+  implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
+
+// Image Loading - PICASSO
+  implementation("com.squareup.picasso:picasso:2.8")
+
+// JSON Parsing
+  implementation("com.google.code.gson:gson:2.10.1")
+
+// Splash Screen API
+  implementation("androidx.core:core-splashscreen:1.0.1")
+
+// Coroutines
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 }
 ```
 ## 🔧 Installation
