@@ -154,7 +154,7 @@ dependencies {
 *Développement d'Applications Mobiles*
 
 ### 🧑‍💻  Développeurs Principaux
-**Saad Staili** et **Rim Laasri**
+**Saad Staili**
 
  
 
