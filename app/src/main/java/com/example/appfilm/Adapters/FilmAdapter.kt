@@ -1,76 +1,92 @@
-package com.example.appfilm.Adapters
+package com.example.tpl0part2.Adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
+import android.view.animation.AlphaAnimation
 import androidx.recyclerview.widget.RecyclerView
-import com.example.appfilm.Models.Film
-import com.example.appfilm.R
+import com.example.tpl0part2.Models.Film
+import com.example.tpl0part2.databinding.ItemFilmBinding
 
 /**
- * RecyclerView Adapter for displaying films.
- * Supports filtering and item animations.
+ * Adapter for displaying films in a RecyclerView.
+ * 
+ * This adapter handles the display of film items with proper view recycling
+ * and click event handling. It includes fade-in animations for items.
+ * 
+ * @property films List of films to display
+ * @property listener Click listener for film items
  */
 class FilmAdapter(
-    private var filmList: MutableList<Film>,
-    private val onItemClick: (Film) -> Unit
+    private val films: List<Film>,
+    private val listener: OnFilmClickListener
 ) : RecyclerView.Adapter<FilmAdapter.FilmViewHolder>() {
 
-    private var fullList: List<Film> = ArrayList(filmList)
-
     /**
-     * ViewHolder for film item.
+     * Interface for handling film item click events.
      */
-    inner class FilmViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val titleText: TextView = itemView.findViewById(R.id.filmTitle)
-        private val imageView: ImageView = itemView.findViewById(R.id.filmImage)
-
-        fun bind(film: Film) {
-            titleText.text = film.title
-            imageView.setImageResource(film.imageResId)
-
-            itemView.setOnClickListener {
-                onItemClick(film)
-            }
-        }
+    interface OnFilmClickListener {
+        /**
+         * Called when a film item is clicked.
+         * 
+         * @param film The film that was clicked
+         */
+        fun onFilmClick(film: Film)
     }
 
+    /**
+     * ViewHolder class for film items.
+     * 
+     * @property binding View binding for the film item layout
+     */
+    class FilmViewHolder(val binding: ItemFilmBinding) : RecyclerView.ViewHolder(binding.root)
+
+    /**
+     * Called when RecyclerView needs a new ViewHolder.
+     */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_film, parent, false)
-        return FilmViewHolder(view)
+        val binding = ItemFilmBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false
+        )
+        return FilmViewHolder(binding)
     }
-
-    override fun onBindViewHolder(holder: FilmViewHolder, position: Int) {
-
-        // Animation
-        holder.itemView.alpha = 0f
-        holder.itemView.animate()
-            .alpha(1f)
-            .setDuration(400)
-            .start()
-
-        holder.bind(filmList[position])
-    }
-
-    override fun getItemCount(): Int = filmList.size
 
     /**
-     * Filters films by title.
+     * Called to display the data at the specified position.
      */
-    fun filter(query: String) {
-        filmList.clear()
-        if (query.isEmpty()) {
-            filmList.addAll(fullList)
-        } else {
-            filmList.addAll(
-                fullList.filter {
-                    it.title.contains(query, ignoreCase = true)
-                }
-            )
+    override fun onBindViewHolder(holder: FilmViewHolder, position: Int) {
+        val film = films[position]
+        
+        holder.binding.apply {
+            filmTitle.text = film.title
+            filmType.text = film.getTypeString()
+            filmRating.text = "⭐ ${film.getRatingString()}"
+            
+            // Set click listener
+            root.setOnClickListener {
+                listener.onFilmClick(film)
+            }
+            
+            // Add fade-in animation
+            setFadeAnimation(root)
         }
-        notifyDataSetChanged()
+    }
+
+    /**
+     * Returns the total number of items in the data set.
+     */
+    override fun getItemCount(): Int = films.size
+
+    /**
+     * Applies a fade-in animation to the view.
+     * 
+     * @param view The view to animate
+     */
+    private fun setFadeAnimation(view: View) {
+        val anim = AlphaAnimation(0.0f, 1.0f)
+        anim.duration = 500
+        view.startAnimation(anim)
     }
 }
