@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom attributes for theming -->
+    <attr name="bottom_nav_color" format="color" />
+    
+    <!-- Film priority colors -->
+    <attr name="priorityHighColor" format="color" />
+    <attr name="priorityMediumColor" format="color" />
+    <attr name="priorityLowColor" format="color" />
+</resources>
