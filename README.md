@@ -29,26 +29,27 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 ## 🎯 Fonctionnalités
 
 ### ✨ Fonctionnalités Principales
-- **🎬 Navigation des Films** - Parcourir les films across multiples catégories (Tendances, Populaires, Nouvelles Sorties, Action, Comédie)
-- **📖 Détails des Films** - Vue détaillée avec descriptions, notations et métadonnées
-- **⭐ Gestion des Favoris** - Ajouter/supprimer des films aux favoris personnels avec glisser-supprimer
-- **🔐 Authentification Utilisateur** - Système de connexion simple
-- **💎 Abonnement VIP** - Abonnement premium à trois niveaux avec flux de paiement sécurisé
+- 🎬 Navigation des films par catégories (Tendances, Populaires, Action, Comédie…)
+- 📖 Détails complets des films (description, note, genre, année)
+- ⭐ Gestion des favoris avec swipe-to-delete
+- 📝 Ajout & modification de films via un formulaire dédié
+- 🔐 Authentification utilisateur
+- 💎 Abonnements VIP premium (3 niveaux)
 
 ### 🎨 Expérience Utilisateur
-- **🌙 Thème Sombre** - Belle interface sombre avec accents dorés
-- **↔️ Défilement Horizontal** - Navigation fluide par catégories
-- **🖼️ Chargement d'Images** - Chargement rapide d'images avec Picasso
-- **📱 Design Responsive** - Optimisé pour différentes tailles d'écran
-- **💫 Gestes de Glissement** - Glisser-supprimer intuitif dans les favoris
+- 🌙 Mode sombre (Dark Mode) automatique (Day/Night)
+- ↔️ Scroll horizontal fluide
+- 💫 Animations RecyclerView (fade, swipe)
+- 🖼️ Chargement d’images optimisé avec Picasso
+- 📱 Design responsive compatible multi-écrans
 
 ### 💳 Système de Paiement
-- **🏆 Niveaux VIP** :
-    - **Niveau 1** : 9,99€/mois - Fonctionnalités de base
-    - **Niveau 2** : 19,99€/mois - Fonctionnalités premium
-    - **Niveau 3** : 29,99€/mois - Fonctionnalités ultimes
-- **💳 Méthodes de Paiement** - Support Visa, MasterCard, PayPal
-- **🔒 Validation Sécurisée** - Validation complète des entrées
+- 🏆 Niveaux VIP
+  - Niveau 1 : 9,99 €/mois
+  - Niveau 2 : 19,99 €/mois
+  - Niveau 3 : 29,99 €/mois
+- 💳 Paiement via Visa / MasterCard / PayPal
+- 🔒 Validation complète des formulaires
 
 ## 🏗️ Architecture
 
