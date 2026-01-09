@@ -30,7 +30,7 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 
 ### ✨ Fonctionnalités Principales
 - 🎬 Navigation des films par catégories (Tendances, Populaires, Action, Comédie…)
-- 📖 Détails complets des films (description, note, genre, année)
+- 📖 Détails complets des films (description, note, genre ...)
 - ⭐ Gestion des favoris avec swipe-to-delete
 - 📝 Ajout & modification de films via un formulaire dédié
 - 🔐 Authentification utilisateur
