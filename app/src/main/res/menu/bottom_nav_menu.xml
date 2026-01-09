@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navigation_favorites"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="@string/favorites" />
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/menu_add" />
+
+    <item
+        android:id="@+id/navigation_premium"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/premium" />
+</menu>
