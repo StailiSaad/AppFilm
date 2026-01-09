@@ -1,3 +1,74 @@
 <resources>
-    <string name="app_name">tp10part2</string>
+    <!-- App name -->
+    <string name="app_name">Film App</string>
+    
+    <!-- Main Activity -->
+    <string name="search_film">Search film...</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="new_releases">New Releases</string>
+    <string name="action_movies">Action Movies</string>
+    <string name="comedy_movies">Comedy</string>
+    <string name="home">Home</string>
+    <string name="premium">Premium</string>
+    <string name="favorites">Favorites</string>
+    <string name="login">Login</string>
+    <string name="clear">Clear</string>
+    
+    <!-- Favorites Activity -->
+    <string name="my_favorites">My Favorites</string>
+    <string name="clear_all">Clear All</string>
+    <string name="no_favorites">No favorites yet\n\nAdd films to your favorites list to see them here!</string>
+    
+    <!-- Film Details -->
+    <string name="add_to_list">Add to Your List</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirm_selection">Confirm Selection</string>
+    <string name="watch_now">WATCH NOW</string>
+    
+    <!-- Form Activity -->
+    <string name="add_movie">Add Movie</string>
+    <string name="edit_movie">Edit Movie</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_description">Description</string>
+    <string name="movie_genre">Genre</string>
+    <string name="movie_rating">Rating (1-10)</string>
+    <string name="movie_year">Release Year</string>
+    <string name="movie_watch_priority">Watch Priority</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="required_field">This field is required</string>
+    <string name="invalid_rating">Rating must be between 1 and 10</string>
+    <string name="invalid_year">Year must be between 1900 and 2030</string>
+    
+    <!-- Genres -->
+    <string name="genre_action">Action</string>
+    <string name="genre_comedy">Comedy</string>
+    <string name="genre_drama">Drama</string>
+    <string name="genre_sci_fi">Science Fiction</string>
+    <string name="genre_horror">Horror</string>
+    <string name="genre_romance">Romance</string>
+    
+    <!-- Priority levels -->
+    <string name="priority_high">High (Watch First)</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_low">Low (Watch Later)</string>
+    
+    <!-- Payment -->
+    <string name="payment_successful">Payment Successful!</string>
+    <string name="back_to_home">Back to Home</string>
+    
+    <!-- Menu -->
+    <string name="menu_filter">Filter</string>
+    <string name="menu_sort">Sort</string>
+    <string name="menu_add">Add Movie</string>
+    <string name="menu_settings">Settings</string>
+    
+    <!-- Sort options -->
+    <string name="sort_by_name">Sort by Name</string>
+    <string name="sort_by_rating">Sort by Rating</string>
+    <string name="sort_by_year">Sort by Year</string>
+    <string name="sort_by_priority">Sort by Priority</string>
 </resources>
