@@ -89,7 +89,7 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 
 |                         Paiement VISA                         |                      Paiement MASTERCARD                      |                        Paiement PAYPAL                        |
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|:-------------------------------------------------------------:|
-| <img src="app/src/screenshots/paiementpage2.jpg" width="200"> | <img src="app/src/screenshots/paiementpage3.jpg" width="200"> | <img src="app/src/screenshots/paiementpage4.jpg" width="200"> |
+| <img src="app/src/screenshots/paiementpage2.jpg" width="200"> | <img src="app/src/screenshots/paiementpage2.jpg" width="200"> | <img src="app/src/screenshots/paiementpage4.jpg" width="200"> |
 |                     *Champs a remplir*                     |                      *Champs a remplir*                       |                        *Finalisation*                         |
 
 
