@@ -55,7 +55,7 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 
 <div align="center">
 
-![Architecture de l'Application](app/src/screenshots/architecture.PNG)
+![Architecture de l'Application](app/src/screenshots/architectureprj.PNG)
 
 
 </div>
