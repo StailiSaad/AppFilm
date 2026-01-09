@@ -93,7 +93,7 @@ Une application Android moderne de streaming de films développée en Kotlin qui
 |                     *Champs a remplir*                     |                      *Champs a remplir*                       |                        *Finalisation*                         |
 
 
-|                         Paiement VISA                         |                               
+|                        Splash Screen                        |                               
 |:-------------------------------------------------------------:| 
 | <img src="app/src/screenshots/splashscreen.jpeg" width="200"> |    
 |                     *Splash Screen*                     |                  
